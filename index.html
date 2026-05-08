@@ -638,7 +638,6 @@ document.getElementById('prev-btn').addEventListener('click', () => {
 document.getElementById('next-btn').addEventListener('click', () => {
   viewMonth++; if (viewMonth > 11) { viewMonth = 0; viewYear++; } render();
 });
-
 document.getElementById('habit-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') document.getElementById('save-btn').click();
   if (e.key === 'Escape') closeModal();
